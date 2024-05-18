@@ -62,6 +62,7 @@ To undo the environment created in the previous step, perform the following step
   --privileged \
   -p 502:502 \
   --name=pfc-modbus-server \
+  -v /tmp:/tmp \
   -v /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket \
   wagoautomation/pfc-modbus-server 
  ```
